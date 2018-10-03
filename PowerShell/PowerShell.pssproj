@@ -27,7 +27,9 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <Compile Include="PowerShell.ps1" />
+    <Compile Include="PowerShell.psd1" />
+    <Compile Include="PowerShell.psm1" />
+    <Compile Include="PowerShell.tests.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
