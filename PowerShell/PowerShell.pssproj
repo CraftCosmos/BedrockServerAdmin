@@ -26,12 +26,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="BedrockServer.psm1-help.xml" />
+    <Content Include="BedrockServerAdmin\BedrockServer.psm1-help.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BedrockServerAdmin.psd1" />
-    <Compile Include="BedrockServerAdmin.psm1" />
-    <Compile Include="BedrockServerAdmin.tests.ps1" />
+    <Compile Include="BedrockServerAdmin\BedrockServerAdmin.psd1" />
+    <Compile Include="BedrockServerAdmin\BedrockServerAdmin.psm1" />
+    <Compile Include="BedrockServerAdmin\BedrockServerAdmin.tests.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BedrockServerAdmin\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
