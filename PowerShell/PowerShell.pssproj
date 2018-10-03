@@ -25,11 +25,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="PowerShell.psd1" />
-    <Compile Include="PowerShell.psm1" />
-    <Compile Include="PowerShell.tests.ps1" />
+    <Content Include="BedrockServer.psm1-help.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BedrockServerAdmin.psd1" />
+    <Compile Include="BedrockServerAdmin.psm1" />
+    <Compile Include="BedrockServerAdmin.tests.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
